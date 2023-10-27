@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <h1>online shopping survey form</h1>
+    <p>please fill the form about your shopping experience</p>
+    </center>
+    <div class="container">
+    <form method="post" action="https://flipkart.com">
+        <label for="name">Enter your name: <input id="name" type="text" placeholder="your name..." required></label>
+        <label for="email">Enter Your Email <input id="email" type="email" placeholder="your mail id"required></label>
+        <label for="mobile number">Enter Mobile Number:<input type="tel" id="mobile number" placeholder="10 digit mobile number" pattern="[0-9]{10}" max="10" min="10"required> </label>
+        <br>
+        <fieldset>
+        <label for="rating">choose rating:</label>
+        <select name="rating" id="rating">
+            <option value="very good">very good</option>
+            <option value="satisfied">satisfied</option>
+            <option value="Bad">Bad</option>
+            <option value="very bad">very bad</option>
+        </select>
+        <br>
+        <p class="products">other products</p>
+        <input type="checkbox" id="moreproducts">
+        <label for="clothes">clothes</label><br>
+        <input type="checkbox" id="moreproducts">
+        <label for="toys">toys</label>
+        <br>
+        <label for="how was the product">any changes required:</label><input type="radio" name="no" id="no" value="no">
+        <label for="no">no</label>
+        <label for="yes"><input id="yes" type="radio" name="yes" class="inline"/>yes</label>
+        <br>
+        <label for="firstname">Provide your Review:</label>
+        <br>
+        <textarea rows="4" cols="42" placeholder="feedback..." id="textarea"></textarea> 
+        <br><br>
+         <input type="submit" id="submit">
+        </fieldset>
+    </form>
+</div>             
+</body>
+</html>

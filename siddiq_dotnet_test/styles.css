@@ -1,0 +1,19 @@
+body{
+    background-color: aquamarine;
+}
+.container{
+     max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    background-color: burlywood;
+}
+label{
+    display:inline-block;
+     padding: 10px;
+ }
+#submit{
+    border-color: red;
+}
+.products{
+    margin-left: 10px;
+}
