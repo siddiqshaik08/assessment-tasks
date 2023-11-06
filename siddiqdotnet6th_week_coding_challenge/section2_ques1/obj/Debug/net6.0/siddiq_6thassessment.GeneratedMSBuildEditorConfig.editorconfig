@@ -1,0 +1,105 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = siddiq_6thassessment
+build_property.RootNamespace = siddiq_6thassessment
+build_property.ProjectDir = C:\Users\shaiks\source\repos\siddiq_6thassessment\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\shaiks\source\repos\siddiq_6thassessment
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/shaiks/source/repos/siddiq_6thassessment/Pages/customer/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY3VzdG9tZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaiks/source/repos/siddiq_6thassessment/Pages/customer/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY3VzdG9tZXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaiks/source/repos/siddiq_6thassessment/Pages/customer/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY3VzdG9tZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaiks/source/repos/siddiq_6thassessment/Pages/customer/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY3VzdG9tZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaiks/source/repos/siddiq_6thassessment/Pages/customer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY3VzdG9tZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaiks/source/repos/siddiq_6thassessment/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaiks/source/repos/siddiq_6thassessment/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaiks/source/repos/siddiq_6thassessment/Pages/order/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcb3JkZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaiks/source/repos/siddiq_6thassessment/Pages/order/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcb3JkZXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaiks/source/repos/siddiq_6thassessment/Pages/order/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcb3JkZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaiks/source/repos/siddiq_6thassessment/Pages/order/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcb3JkZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaiks/source/repos/siddiq_6thassessment/Pages/order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcb3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaiks/source/repos/siddiq_6thassessment/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaiks/source/repos/siddiq_6thassessment/Pages/product/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccHJvZHVjdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaiks/source/repos/siddiq_6thassessment/Pages/product/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccHJvZHVjdFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaiks/source/repos/siddiq_6thassessment/Pages/product/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccHJvZHVjdFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaiks/source/repos/siddiq_6thassessment/Pages/product/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccHJvZHVjdFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaiks/source/repos/siddiq_6thassessment/Pages/product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaiks/source/repos/siddiq_6thassessment/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaiks/source/repos/siddiq_6thassessment/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaiks/source/repos/siddiq_6thassessment/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/shaiks/source/repos/siddiq_6thassessment/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-m8b9eu7ttz

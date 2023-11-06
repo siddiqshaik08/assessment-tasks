@@ -1,0 +1,112 @@
+             Shaik Siddiq 1033308
+
+--1) List Product Names and Prices
+select Name as Product_Names,ListPrice as Prices from Production.Product;
+go
+--2) Find Customers from a Specific City name,emailaddress
+
+select * from Sales.Customer
+select * from Person.BusinessEntityContact
+select * from Person.EmailAddress
+select * from Person.Person
+select * from Person.Address
+select * from Person.BusinessEntityAddress
+go
+
+select p.FirstName,ea.EmailAddress,pa.city from sales.Customer as sc
+inner join person.BusinessEntityContact as bec
+on sc.PersonID = bec.PersonID
+ join Person.EmailAddress as ea
+ on bec.BusinessEntityID=ea.BusinessEntityID
+ join Person.Person as p
+ on bec.BusinessEntityID=p.BusinessEntityID
+ join person.BusinessEntityAddress as bea
+ on bea.BusinessEntityID=bec.BusinessEntityID
+ join person.Address as pa
+ on bea.AddressID=pa.AddressID
+where city='seattle';
+
+
+--3) Calculate Total Sales for a Product
+select * from Sales.SalesOrderDetail
+select * from Production.Product
+go
+
+select pp.name,sum(sod.UnitPrice) as total_sales_amount from Sales.SalesOrderDetail as sod
+join Production.Product as pp
+on sod.ProductID=pp.ProductID
+where sod.ProductID=793
+group by pp.Name;
+
+
+--4) List Employees by Job Title
+select * from HumanResources.Employee
+select * from person.Person
+select concat(pp.FirstName,' ',pp.MiddleName,' ',pp.LastName) as Name ,JobTitle from HumanResources.Employee as hre
+join Person.Person as pp
+on hre.BusinessEntityID=pp.BusinessEntityID
+order by JobTitle
+go
+
+--5)Find Order Details for a Customer
+--select * from Sales.SalesOrderHeader
+--select * from Sales.SalesOrderDetail
+--select * from Production.Product
+
+select soh.CustomerID,Name,OrderQty
+from Sales.SalesOrderHeader as soh
+join Sales.SalesOrderDetail as sod
+on soh.SalesOrderID=sod.SalesOrderID
+join Production.Product as pp
+on sod.ProductID=pp.ProductID
+where CustomerID = 29485
+go
+
+--6)Find Orders Placed by a Salesperson Display the order number, order date, and customer name.
+
+select * from Sales.SalesOrderHeader
+select * from HumanResources.Employee
+
+select Salesordernumber,orderdate,
+
+
+--7) Identify Inactive Customers
+select * from Person.Person
+select * from Sales.SalesOrderHeader
+select * from Person.EmailAddress
+
+select p.FirstName, ea.EmailAddress from person.person as p
+left join Sales.SalesOrderHeader as soh
+on p.BusinessEntityID=soh.CustomerID
+left join Person.EmailAddress as ea 
+on p.businessentityid=ea.BusinessEntityID
+where soh.PurchaseOrderNumber is null;
+
+--8)
+select * from Production.ProductCategory
+select * from Sales.SalesOrderDetail
+
+select pc.Name,avg(sod.UnitPrice) average_price
+from Production.ProductCategory as pc
+join Sales.SalesOrderDetail as sod
+on pc.ProductCategoryID=sod.ProductID
+group by pc.Name
+
+
+
+--9) Find Top-Selling Products
+--select * from Production.Product
+--select * from Sales.SalesOrderDetail
+
+select p.Name,sum(sod.OrderQty) as Orderqty from Production.Product as p
+join Sales.SalesOrderDetail as sod
+on p.ProductID=sod.ProductID
+group by p.Name
+order by OrderQty desc;
+
+
+--10)Identify Late Shipments
+--select * from Sales.SalesOrderHeader 
+
+select salesordernumber,ShipDate from Sales.SalesOrderHeader
+where ShipDate>DueDate;

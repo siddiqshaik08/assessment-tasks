@@ -1,0 +1,7 @@
+C:\Users\shaiks\source\repos\siddiq_6th_assessment\bin\Debug\siddiq_6th_assessment.exe.config
+C:\Users\shaiks\source\repos\siddiq_6th_assessment\bin\Debug\siddiq_6th_assessment.exe
+C:\Users\shaiks\source\repos\siddiq_6th_assessment\bin\Debug\siddiq_6th_assessment.pdb
+C:\Users\shaiks\source\repos\siddiq_6th_assessment\obj\Debug\siddiq_6th_assessment.csproj.AssemblyReference.cache
+C:\Users\shaiks\source\repos\siddiq_6th_assessment\obj\Debug\siddiq_6th_assessment.csproj.CoreCompileInputs.cache
+C:\Users\shaiks\source\repos\siddiq_6th_assessment\obj\Debug\siddiq_6th_assessment.exe
+C:\Users\shaiks\source\repos\siddiq_6th_assessment\obj\Debug\siddiq_6th_assessment.pdb

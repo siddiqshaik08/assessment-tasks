@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<title>To-Do List Application</title>
+<link rel="stylesheet" href="applist.css">
+<style>
+        /* Add CSS styles for the checkbox here */
+        .task input[type="checkbox"] {
+            /* Define your desired checkbox styles here */
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            vertical-align: middle;
+            /* Define the color when checkbox is checked */
+            background-color: yellow;
+        }
+
+ 
+
+        body {
+            background-color: bisque;
+        }
+
+ 
+
+        #container1 {
+            position: absolute;
+            background-color: white;
+            transform: translate(80%, 50%);
+            min-height: 100px;
+            width: 450px;
+        }
+
+ 
+
+        h1 {
+            text-align: center;
+        }
+
+ 
+
+        #taskdet {
+            position: relative;
+            padding: 20px 20px;
+            background-color: aquamarine;
+        }
+
+ 
+
+        .task {
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 10px;
+            background-color: aliceblue;
+        }
+
+ 
+
+        .task button {
+            border-radius: 5px;
+        }
+
+ 
+
+        #taskdet input {
+            border: 5px solid #d1d3d4;
+        }
+
+ 
+
+        #taskdet button {
+            background-color: brown;
+        }
+</style>
+</head>
+<body>
+<!-- application name in h1 tag -->
+<h1>To-Do List Application</h1>
+<!-- created one container -->
+<div id="container1">
+<!-- second container it stores text box and button -->
+<div id="taskdet">
+<label for="taskinfo">Task description:</label>
+<input type="text" placeholder="enter your task details">
+<button id="add1">Add</button>
+</div>
+<!-- it stores list items and buttons which are created by js in execution -->
+<div id="tasks"></div>
+</div>
+<script>
+        document.querySelector('#add1').onclick = function() {
+            if (document.querySelector('#taskdet input').value.length == 0) {
+                alert("Enter your task");
+            } else {
+                document.querySelector('#tasks').innerHTML += `
+<div class="task">
+<input type="checkbox" class="check">
+                        ${document.querySelector('#taskdet input').value}
+<button class='del'>Delete</button>
+</div>
+                `;
+                // Add event listener for deleting tasks
+                var currenttasks = document.querySelectorAll('.del');
+                for (var i = 0; i < currenttasks.length; i++) {
+                    currenttasks[i].onclick = function() {
+                        this.parentNode.remove();
+                    }
+                }
+            }
+        };
+</script>
+<script>
+        $(document).ready(function() {
+            // Use event delegation to handle click events on checkboxes
+            $(document).on('change', '.check', function() {
+                if ($(this).prop('checked')) {
+                    $(this).parent().css("background-color", "yellow");
+                } else {
+                    $(this).parent().css("background-color", ""); // Clear the background color when unchecked
+                }
+            });
+
+ 
+
+            // Add a click event to the "Add" button to create new tasks
+            $("#add1").click(function() {
+                var taskDescription = $("#taskdet input").val();
+                if (taskDescription.length === 0) {
+                    alert("Enter your task");
+                } else {
+                    $("#tasks").append(`
+<div class="task">
+<input type="checkbox" class="check">
+                            ${taskDescription}
+<button class='del'>Delete</button>
+</div>
+                    `);
+                    // Clear the input field
+                    $("#taskdet input").val("");
+                }
+            });
+
+ 
+
+            // Add event listener for deleting tasks
+            $(document).on('click', '.del', function() {
+                $(this).parent().remove();
+            });
+        });
+</script>
+</body>
+</html>

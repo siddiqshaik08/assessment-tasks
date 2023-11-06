@@ -1,0 +1,41 @@
+body{
+    background-color: bisque;
+}
+
+#container1{
+    position: absolute;
+    background-color: white;
+    transform: translate(80%,50%);
+    min-height: 100px;
+    width: 450px;
+}
+
+h1{
+    text-align: center;
+}
+#taskdet{
+    position: relative;
+    padding: 20px 20px;
+    background-color: aquamarine;
+}
+
+.task{
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background-color: aliceblue;
+
+}
+.task button{
+    border-radius: 5px;
+}
+#taskdet input{
+    border: 5px solid #d1d3d4;
+
+}
+
+#taskdet button{
+    background-color: brown;
+
+}

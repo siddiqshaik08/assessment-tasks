@@ -1,0 +1,7 @@
+C:\Users\shaiks\source\repos\assessement\bin\Debug\assessement.exe.config
+C:\Users\shaiks\source\repos\assessement\bin\Debug\assessement.exe
+C:\Users\shaiks\source\repos\assessement\bin\Debug\assessement.pdb
+C:\Users\shaiks\source\repos\assessement\obj\Debug\assessement.csproj.AssemblyReference.cache
+C:\Users\shaiks\source\repos\assessement\obj\Debug\assessement.csproj.CoreCompileInputs.cache
+C:\Users\shaiks\source\repos\assessement\obj\Debug\assessement.exe
+C:\Users\shaiks\source\repos\assessement\obj\Debug\assessement.pdb

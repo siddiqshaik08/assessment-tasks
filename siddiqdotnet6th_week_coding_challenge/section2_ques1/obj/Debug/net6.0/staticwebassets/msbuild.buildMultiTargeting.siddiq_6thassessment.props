@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\siddiq_6thassessment.props" />
+</Project>
